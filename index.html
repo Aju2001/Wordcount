@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Word counter</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;900&display=swap" rel="stylesheet">
+  <!-- link icon -->
+    <link rel="icon" type="image/png" href="https://img.icons8.com/material-two-tone/100/000000/word.png">
+  <script type="text/javascript">
+    var input = document.querySelectorAll('#text-for-count')[0];
+    console.log(input);
+  </script>
+</head>
+
+<body>
+
+  <section>
+    <div class="navbar">
+      <img width="50px" src="logo.png" class="logo-img" alt="" onclick="location.href='about-us.html'">
+      <ul>
+        <button class="buttons-navbar button1" type="button" name="Home-button" onclick="refreshPage()">
+          <li class="sub-navbar">Home</li>
+        </button>
+
+      <button class="buttons-navbar button1" type="button" name="About-button" id="about-us" onclick="location.href='about-us.html'">
+          <li>About Us</li>
+        </button>
+      </ul>
+  </section>
+  </div>
+  <section>
+    <br>
+    <br>
+    <p class="brand-quote">COUNTING WORDS AND CHARACTERS IS EASY.</p>
+    <p class="brand-quote">Count Words and Characters in your Paragraph in just a Seconds...</p>
+  </section>
+  <br>
+  <div class="navbar">
+
+
+    <label for="cases">Case Convertion :</label>
+    <input class="butt button1" type="button" value="Sentence case" id="sentence" onclick="sentence()" />
+    <input class="butt button1" type="button" value="Title Case" id="title" onclick="titleCase()" />
+    <input class="butt button1" type="button" value="lower case" id="lower" onclick="lower()" />
+    <input class="butt button1" type="button" value="UPPER CASE" id="upper" onclick="upper()" />
+    <div class="">
+      <input class="butt button1" type="button" value="Clear" "id="clear" onclick="clearButton()" />
+    </div>
+  </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <section>
+    <textarea maxlength="10000" name="name" rows="23" cols="80" id="text-for-count" style="overflow-y: scroll; height: 300px script=" var input=document.querySelectorAll('textarea')[0]"
+      placeholder="start typing, or copy and paste your document here..."></textarea>
+    <br>
+    <br>
+    <div class="navbar">
+      <div class="inline-div">
+        <label class="label-for-headings" for="Words">Words</label>
+        <br>
+        <textarea id="wordCount" readonly disabled cols="8" rows="3" class="inline-txtarea" name="Words">0</textarea>
+      </div>
+      <div class="inline-div">
+        <label class="label-for-headings" for="characters">Characters</label>
+        <br>
+        <textarea id="characterCount" readonly disabled cols="8" rows="3" class="inline-txtarea" name="characters">0</textarea>
+      </div>
+      <div class="inline-div">
+        <label class="label-for-headings" for="sentences">Sentences</label>
+        <br>
+        <textarea id="sentenceCount" readonly disabled cols="8" rows="3" class="inline-txtarea" name="sentences">0</textarea>
+      </div>
+      <div class="inline-div">
+        <label class="label-for-headings" for="paragraph">Paragraphs</label>
+        <br>
+        <textarea id="paragraphCount" readonly disabled cols="8" rows="3" class="inline-txtarea" name="paragraph">0</textarea>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="back.js"></script>
+  <!-- footer part -->
+  <footer id="footer">
+      <div class="footer-top">
+          <div class="spacex-title">Word Count © 2020</div>
+          <br>
+          <div class="footer-end">
+              <a href="#footer">Terms Of Service&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Privacy Policy</a>
+          </div>
+          <div class="footer-row">
+              <div class="footer-title">E-mail : </div>
+              <div class="footer-detail">Support@wordcount.com</div>
+          </div>
+          <br>
+          <div class="footer-row">
+              <div class="footer-title">Address:</div>
+              <div class="footer-detail address">Word Count, <br> Ground floor, <br> Khar Road,<br> Mumbai 400001.</div>
+          </div>
+<br>
+          <div class="social-media-cont">
+              <a href="#footer"><img src="youtube.svg" class="footer-icon" alt="youtube" onclick="location.href='https://studio.youtube.com/channel/UCfnkFgZMIBkvIBUi6WdZIHg/'"></a>
+              <a href="#footer"><img src="instagram.svg" class="footer-icon" alt="instagram" onclick="location.href='https://www.instagram.com/wordcount9/'"></a>
+              <a href="#footer"><img src="twitter.svg" class="footer-icon" alt="twitter"></a>
+              <a href="#footer"><img src="flickr.svg" class="footer-icon" alt="flickr" onclick="location.href='https://www.flickr.com/photos/191561526@N08/'"></a>
+          </div>
+      </div>
+
+  </footer>
+</body>
+
+</html>
